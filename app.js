@@ -4,7 +4,7 @@ function onReady(){
   const toDoList = document.getElementById('toDoList');
 }
 
-addToDoForm.addEventListener('submit, event => {
+addToDoForm.addEventListener("submit", event => {
   event.preventDefault();
   let title = newToDoText.value;
   let newLi = document.createElement('li');
@@ -13,9 +13,6 @@ addToDoForm.addEventListener('submit, event => {
   newLi.textContent = title;
   newLi.appendChild(checkbox);
   toDoList.appendChild(newLi);
+  deleteButton.appendChild(newLi);
   newToDoText.value = '';
 });
-
-window.onload = function(){
-  alert("The window has loaded!");
-}
