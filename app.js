@@ -14,7 +14,7 @@ addToDoForm.addEventListener("submit", event => {
   newLi.appendChild(checkbox);
   let deleteButton = document.createElement("button");
   deleteButton.type = "button";
-  deleteButton.textContent = gbye;
+  deleteButton.innerHTML = '<span>Delete</span>';
   newLi.appendChild(deleteButton);
   toDoList.appendChild(newLi);
 });
