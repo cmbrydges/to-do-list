@@ -25,5 +25,6 @@ addToDoForm.addEventListener("submit", event => {
     event.preventDefault();
     function removeDeletedItem (lastElementAdded) {
     var lastElementAdded  = document.getElementById[listItems.length - 1];
-    lastElementAdded.toDoList.removeChild(lastElementAdded);
+    lastElementAdded.toDoList.removeChild(lastElementAdded)
+  };
 }
