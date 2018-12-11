@@ -12,17 +12,18 @@ addToDoForm.addEventListener("submit", event => {
   newLi.appendChild(checkbox);
   let deleteButton = document.createElement("button");
   deleteButton.type = "button";
-  deleteButton.innerHTML = '<span>Delete</span>';
+  deleteButton.innerHTML = '<span id =deleteButton">Delete</span>';
   newLi.appendChild(deleteButton);
   toDoList.appendChild(newLi);
   });
 
   // Removes the last element from the document
 
-/*  var clickDeleteButton = deleteButton;
-  clickDeleteButton.addEventListener("onClick", event => {
+const deleteButton = document.getElementById('deleteButton');
+  deleteButton.addEventListener("onClick", event => {
+  console.log ('We are deleting the item you selected!');
   event.preventDefault();
   function removeItem(newLi){
   var newLi = document.getElementById('li');
   toDoList.removeChild(newLi);
-}; */
+});
