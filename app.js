@@ -1,8 +1,6 @@
-function onReady(){
   const addToDoForm = document.getElementById('addToDoForm');
   const newToDoText = document.getElementById('newToDoText');
   const toDoList = document.getElementById('toDoList');
-}
 
 addToDoForm.addEventListener("submit", event => {
   event.preventDefault();
@@ -25,6 +23,6 @@ addToDoForm.addEventListener("submit", event => {
     event.preventDefault();
     function removeDeletedItem (lastElementAdded) {
     var lastElementAdded  = document.getElementById[listItems.length - 1];
-    lastElementAdded.toDoList.removeChild(lastElementAdded)
-  };
+    lastElementAdded.toDoList.removeChild(lastElementAdded);
+}
 }
