@@ -19,27 +19,10 @@ addToDoForm.addEventListener("submit", event => {
 
   // Removes the last element from the document
 
-  var clickdeletebutton = deleteButton;
+/*  var clickDeleteButton = deleteButton;
   clickDeleteButton.addEventListener("onClick", event => {
   event.preventDefault();
   function removeItem(newLi){
   var newLi = document.getElementById('li');
   toDoList.removeChild(newLi);
-});
-
-
-  /*let deleteButton = document.createElement("button");
-  deleteButton.type = "button";
-  deleteButton.innerHTML = '<span>Delete</span>';
-  deleteButton.addEventListener('onClick', event => {
-        toDoList.removeChild;
-    });*/
-
-
- /* deleteButton.addEventListener("onClick", event => {
-    event.preventDefault();
-    function removeDeletedItem (lastElementAdded) {
-    var lastElementAdded  = document.getElementById[listItems.length - 1];
-    lastElementAdded.toDoList.removeChild(lastElementAdded);
-}
-}); */
+}; */
