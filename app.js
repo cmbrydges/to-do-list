@@ -12,14 +12,14 @@ addToDoForm.addEventListener("submit", event => {
   newLi.appendChild(checkbox);
   let deleteButton = document.createElement("button");
   deleteButton.type = "button";
-  deleteButton.innerHTML = '<span id ="deleteButton">Delete</span>';
+  deleteButton.innerHTML = 'Delete';
+  deleteButton.id = "deleteButton";
   newLi.appendChild(deleteButton);
   toDoList.appendChild(newLi);
   });
 
-  // Removes the element next to the delete button from the document
-  let deleteButton = document.getElementById('deleteButton');
-  deleteButton.addEventListener('click', event => {
-  var newLi = document.getElementById('li');
-  toDoList.removeChild('li');
-});
+document.addEventListener("click", function (e){
+  if (e.srcElement.id === 'deleteButton'){
+    e.srcElement.parentNode.remove();
+  }
+}); 
