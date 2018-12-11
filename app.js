@@ -17,13 +17,9 @@ addToDoForm.addEventListener("submit", event => {
   toDoList.appendChild(newLi);
   });
 
-  // Removes the last element from the document
-
-const deleteButton = document.getElementById('deleteButton');
-  deleteButton.addEventListener("onClick", event => {
-  console.log ('We are deleting the item you selected!');
-  event.preventDefault();
-  function removeItem(newLi){
+  // Removes the element next to the delete button from the document
+  let deleteButton = document.getElementById('deleteButton');
+  deleteButton.addEventListener('click', event => {
   var newLi = document.getElementById('li');
-  toDoList.removeChild(newLi);
+  toDoList.removeChild('li');
 });
