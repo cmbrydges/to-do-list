@@ -14,6 +14,7 @@ addToDoForm.addEventListener("submit", event => {
   deleteButton.type = "button";
   deleteButton.innerHTML = 'Delete';
   deleteButton.id = "deleteButton";
+  deleteButton.class ="mdl-button mdl-button--raised mdl-button--accent";
   newLi.appendChild(deleteButton);
   toDoList.appendChild(newLi);
   });
@@ -22,4 +23,4 @@ document.addEventListener("click", function (e){
   if (e.srcElement.id === 'deleteButton'){
     e.srcElement.parentNode.remove();
   }
-}); 
+});
